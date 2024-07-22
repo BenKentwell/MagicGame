@@ -33,8 +33,11 @@ public class CameraController : MonoBehaviour
         Quaternion vertical = Quaternion.AngleAxis(lookDelta.y, Vector3.left);
         Quaternion horizontal = Quaternion.AngleAxis(lookDelta.x, Vector3.up);
         childCamera.transform.rotation = rotation * vertical;
+        
         transform.rotation = horizontal * transform.rotation;
+
         float cameraLookX = childCamera.transform.eulerAngles.x;
+
         if (cameraLookX < 360 - lookContstraintAngle.x && cameraLookX > 270)
         {
             Vector3 pos = childCamera.transform.localPosition;
