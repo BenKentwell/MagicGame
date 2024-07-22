@@ -62,10 +62,19 @@ public class WeaponManager : MonoBehaviour
                 break;
 
             case eWeapon.Beam:
-                if (_context.phase == InputActionPhase.Performed)
+                if (_context.phase == InputActionPhase.Started)
                 {
-                    currentWeapon.Shoot(playerCamera.transform);
+                    BeamWand wand = (BeamWand)currentWeapon;
                     SetWeaponCanShoot();
+                    wand.SetShooting(playerCamera.transform);
+                }
+
+                if (_context.phase == InputActionPhase.Canceled)
+                {
+                    {
+                        BeamWand wand = (BeamWand)currentWeapon;
+                        wand.SetNotShooting();
+                    }
                 }
                 break;
 

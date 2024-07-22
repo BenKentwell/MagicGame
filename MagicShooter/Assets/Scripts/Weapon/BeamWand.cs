@@ -4,18 +4,44 @@ using UnityEngine;
 
 public class BeamWand : Weapon
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField, Tooltip("Damage over held time")] private AnimationCurve damageCurve;
+
+    private float currentDamage = 0;
+    private GameObject cam;
+    private float timer;
+
+    private bool isShooting;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isShooting)
+        {
+            //Find last key on cruve and set damage
+            //if(timer > lastkeytime)
+
+            Damage = damageCurve.Evaluate(timer);
+
+            timer += Time.deltaTime;
+            Shoot(cam.transform);
+        }
     }
+
+    public void SetShooting(Transform _cameraTransform)
+    {
+        cam = _cameraTransform.gameObject;
+        isShooting = true;
+        timer = 0;
+
+    }
+
+    public void SetNotShooting()
+    {
+        timer = 0;
+        isShooting = false;
+    }
+
 
     public override void Shoot(Transform _cameraTransform)
     {
