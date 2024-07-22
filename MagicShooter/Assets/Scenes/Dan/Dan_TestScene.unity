@@ -140,15 +140,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3301795707517615453, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: -2.17
       objectReference: {fileID: 0}
     - target: {fileID: 3301795707517615453, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 3301795707517615453, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.86
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 3301795707517615453, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -177,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 3301795707517615453, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6510118449057182676, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
@@ -335,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667903388445061049, guid: 8c7479067bec0e4449a4e54457eeae9f, type: 3}
       propertyPath: RotationModule.curve.scalar
-      value: 0.5235988
+      value: 0.2617994
       objectReference: {fileID: 0}
     - target: {fileID: 7667903388445061049, guid: 8c7479067bec0e4449a4e54457eeae9f, type: 3}
       propertyPath: RotationModule.x.minMaxState
@@ -347,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667903388445061049, guid: 8c7479067bec0e4449a4e54457eeae9f, type: 3}
       propertyPath: RotationModule.curve.minScalar
-      value: -0.5235988
+      value: -0.2617994
       objectReference: {fileID: 0}
     - target: {fileID: 7667903388445061049, guid: 8c7479067bec0e4449a4e54457eeae9f, type: 3}
       propertyPath: RotationModule.curve.minMaxState
