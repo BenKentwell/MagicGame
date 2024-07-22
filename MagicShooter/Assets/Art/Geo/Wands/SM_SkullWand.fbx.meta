@@ -3,7 +3,17 @@ guid: a1dfb2b8b92bb654889a2495dbeccec7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crystal_mat
+    second: {fileID: 2100000, guid: cf061d70f2b6df847af8c83510a843dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wand_mat
+    second: {fileID: 2100000, guid: 6075355d421dc464fa64a6052ec37660, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
