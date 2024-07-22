@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 3000
-  dampening: 4
+  dampening: 2
 --- !u!114 &4209007907482080247
 MonoBehaviour:
   m_ObjectHideFlags: 0
