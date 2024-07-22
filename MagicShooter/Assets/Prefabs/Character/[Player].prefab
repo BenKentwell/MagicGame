@@ -273,7 +273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 1000
   dampening: 2
-  maximumVelocity: 0
 --- !u!114 &4209007907482080247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +464,10 @@ PrefabInstance:
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
+    - target: {fileID: 3083030172361979669, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 7458820648443271415, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: m_RootOrder
       value: 0
