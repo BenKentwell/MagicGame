@@ -43,16 +43,36 @@ public class WeaponManager : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext _context)
     {
-        switch (_context.phase)
+        switch (currentWeapon.weaponType)
         {
-            case InputActionPhase.Started:
-            {
-                currentWeapon.Shoot(playerCamera.transform);
-                SetWeaponCanShoot();
-            }
+            case eWeapon.Missile:
+                if (_context.phase == InputActionPhase.Started)
+                {
+                    currentWeapon.Shoot(playerCamera.transform);
+                    SetWeaponCanShoot();
+                }
+                break;
+
+            case eWeapon.Scatter:
+                if (_context.phase == InputActionPhase.Started)
+                {
+                    currentWeapon.Shoot(playerCamera.transform);
+                    SetWeaponCanShoot();
+                }
+                break;
+
+            case eWeapon.Beam:
+                if (_context.phase == InputActionPhase.Performed)
+                {
+                    currentWeapon.Shoot(playerCamera.transform);
+                    SetWeaponCanShoot();
+                }
+                break;
+
+            case eWeapon.Error:
+                Debug.Log("WeaponTypeNotSet");
                 break;
         }
-        
     }
 
     public void SetWeaponCanShoot()

@@ -20,6 +20,7 @@ public class CharacterController : MonoBehaviour
     private Vector3 velocity;
     private Vector3 direction;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +36,22 @@ public class CharacterController : MonoBehaviour
 
         direction = transform.TransformDirection(movement);
         direction *= acceleration;
+        /*velocity += direction * Time.deltaTime;
+        velocity.x = Mathf.Lerp(velocity.x, 0, dampening * Time.deltaTime);
+        velocity.z = Mathf.Lerp(velocity.z, 0, dampening * Time.deltaTime);
+        velocity.y = rigidBody.velocity.y;
+        rigidBody.velocity = new Vector3(velocity.x * Time.deltaTime, velocity.y, velocity.z * Time.deltaTime);
+*/
         velocity += direction * Time.deltaTime;
         velocity.x = Mathf.Lerp(velocity.x, 0, dampening * Time.deltaTime);
         velocity.z = Mathf.Lerp(velocity.z, 0, dampening * Time.deltaTime);
         velocity.y = rigidBody.velocity.y;
 
         rigidBody.velocity = new Vector3(velocity.x * Time.deltaTime, velocity.y, velocity.z * Time.deltaTime);
+        /*rigidBody.AddForce(new Vector3(velocity.x, 0, velocity.z ));*/
+      
+
+
     }
 
     public void Move(InputAction.CallbackContext _context)
