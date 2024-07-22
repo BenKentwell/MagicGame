@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 156476287637715757}
   - component: {fileID: 3083030172361979669}
   - component: {fileID: 2587253741643588755}
-  - component: {fileID: 1460144521660753299}
   - component: {fileID: 5085078512098513107}
   - component: {fileID: 4828201483884160900}
+  - component: {fileID: -793267625517009228}
   m_Layer: 0
   m_Name: BeamWand
   m_TagString: Untagged
@@ -101,25 +101,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1460144521660753299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958420512929566087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cee7d412dc80d449a1703a76982003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Mana: 100
-  CostToShoot: 1
-  Damage: 1
-  hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
-  ShootParticleSystem: {fileID: 5085078512098513107}
-  canShoot: 1
-  weaponType: 0
 --- !u!198 &5085078512098513107
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4899,3 +4880,46 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-793267625517009228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958420512929566087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a42e210e619e764a9d63b437b74159f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mana: 100
+  CostToShoot: 1
+  Damage: 1
+  hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
+  ShootParticleSystem: {fileID: 5085078512098513107}
+  canShoot: 1
+  weaponType: 2
+  damageCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.012499239
+      value: 0.08726876
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
