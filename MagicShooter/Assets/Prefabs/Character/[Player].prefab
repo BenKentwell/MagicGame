@@ -272,8 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65936bfdfe813c44da7cf946de8e2311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 1000
-  dampening: 2
+  acceleration: 3000
+  dampening: 3
 --- !u!114 &4209007907482080247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,6 +459,10 @@ PrefabInstance:
       value: MissileWand
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 958420512929566087, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -544,6 +548,10 @@ PrefabInstance:
       value: ScatterWand
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 958420512929566087, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -616,6 +624,10 @@ PrefabInstance:
     - target: {fileID: 958420512929566087, guid: 8cd9c63740b186347b82852c774adcf7, type: 3}
       propertyPath: m_Name
       value: BeamWand
+      objectReference: {fileID: 0}
+    - target: {fileID: 958420512929566087, guid: 8cd9c63740b186347b82852c774adcf7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: 8cd9c63740b186347b82852c774adcf7, type: 3}
       propertyPath: m_IsActive
