@@ -27,7 +27,7 @@ public class CharacterController : MonoBehaviour
             rigidBody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 movement = Vector3.zero;
         movement += horizontal.x * Vector3.right;
