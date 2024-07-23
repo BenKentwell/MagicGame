@@ -38,10 +38,6 @@ public class EnemyBullet : MonoBehaviour
 
         if (!enemyRM && !enemy )
             Destroy(this.gameObject);
-            
-            
-
-
     }
 
 }
