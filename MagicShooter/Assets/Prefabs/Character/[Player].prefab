@@ -272,8 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65936bfdfe813c44da7cf946de8e2311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 3000
-  dampening: 3
+  acceleration: 4000
+  dampening: 3.5
 --- !u!114 &4209007907482080247
 MonoBehaviour:
   m_ObjectHideFlags: 0
