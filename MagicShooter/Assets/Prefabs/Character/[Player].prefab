@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 687898344877123320}
+  audioMang: {fileID: 0}
   currentWeapon: {fileID: 1683479225447400808}
   health: 100
 --- !u!114 &6478440227537116367
@@ -445,14 +446,19 @@ MonoBehaviour:
   currentWeapon:
     weapon: {fileID: 1683479225447400808}
     mana: 100
+    maxVal: 100
   weapons:
   - weapon: {fileID: 1683479225447400808}
     mana: 50
+    maxVal: 50
   - weapon: {fileID: 4957558504334003223}
     mana: 25
+    maxVal: 25
   - weapon: {fileID: 790609462726646642}
     mana: 100
+    maxVal: 100
   playerCamera: {fileID: 6773489208373346703}
+  audioMang: {fileID: 0}
   manaDisplay: {fileID: 0}
 --- !u!1001 &225059977530220795
 PrefabInstance:
@@ -757,8 +763,16 @@ PrefabInstance:
       value: P_SkullWandBeam
       objectReference: {fileID: 0}
     - target: {fileID: 7843946868017328628, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843946868017328628, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261110592190072925, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
