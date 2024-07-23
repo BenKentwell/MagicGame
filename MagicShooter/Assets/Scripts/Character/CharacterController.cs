@@ -14,6 +14,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField, Tooltip("Intensity of the players slowing down.")]
     private float dampening;
 
+    [SerializeField]
+    private CameraController cameraController;
+
     private Rigidbody rigidBody;
 
     private Vector2 horizontal;
@@ -26,6 +29,9 @@ public class CharacterController : MonoBehaviour
     {
         if (!rigidBody)
             rigidBody = GetComponent<Rigidbody>();
+
+        if(!cameraController)
+            cameraController = GetComponent<CameraController>();
     }
 
     void FixedUpdate()
@@ -51,7 +57,8 @@ public class CharacterController : MonoBehaviour
         /*rigidBody.AddForce(new Vector3(velocity.x, 0, velocity.z ));*/
       
 
-
+          cameraController.bobRate = rigidBody.velocity.magnitude;
+        
     }
 
     public void Move(InputAction.CallbackContext _context)

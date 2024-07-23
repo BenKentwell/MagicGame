@@ -18,6 +18,10 @@ public class CameraController : MonoBehaviour
     private GameObject childCamera;
     private Vector2 lookDelta;
 
+    public float bobRate = 0;
+
+    private float bobTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,13 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
+        if(bobRate > 1f)
+        {
+        bobTimer += Time.deltaTime;
+        childCamera.transform.Translate(new Vector3(0, Mathf.Sin(bobTimer * 8) * (Time.deltaTime / 2),0));
+
+        }
+        
         Quaternion rotation = childCamera.transform.rotation;
         Quaternion vertical = Quaternion.AngleAxis(lookDelta.y, Vector3.left);
         Quaternion horizontal = Quaternion.AngleAxis(lookDelta.x, Vector3.up);
@@ -48,6 +59,8 @@ public class CameraController : MonoBehaviour
             Vector3 pos = childCamera.transform.localPosition;
             childCamera.transform.SetLocalPositionAndRotation(pos, Quaternion.Euler(lookContstraintAngle.y, 0, 0));
         }
+       
+            
     }
 
     public void OnLook(InputAction.CallbackContext _context)

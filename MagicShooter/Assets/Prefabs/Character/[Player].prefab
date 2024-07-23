@@ -504,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 4000
   dampening: 3.5
+  cameraController: {fileID: 6228931807920229310}
 --- !u!114 &4209007907482080247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +662,7 @@ MonoBehaviour:
   lookSensitivityMax: 1
   lookContstraintAngle: {x: 80, y: 80}
   dampening: 0
+  bobRate: 0
 --- !u!114 &6351726502943862583
 MonoBehaviour:
   m_ObjectHideFlags: 0

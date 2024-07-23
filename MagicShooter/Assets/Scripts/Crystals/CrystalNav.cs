@@ -35,11 +35,9 @@ public class CrystalNav : MonoBehaviour
     {
         if (destinationPoint)
         {
-            Debug.Log(destinationPoint.name);
             crystalBase.transform.Translate(direction * speed * Time.deltaTime);
 
         }
-        Debug.Log(Vector3.Distance(crystalBase.transform.position, destinationPoint.transform.position));
 
         if (Vector3.Distance(crystalBase.transform.position, destinationPoint.transform.position) < 2f)
         {
