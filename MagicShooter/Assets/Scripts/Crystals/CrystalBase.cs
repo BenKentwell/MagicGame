@@ -8,12 +8,6 @@ public class CrystalBase : MonoBehaviour
 
     [SerializeField] private List<GameObject> doorsToOpen = new();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -48,7 +42,6 @@ public class CrystalBase : MonoBehaviour
         }
 
         //Break Crystal
-
         Destroy(this.gameObject);
     }
     
