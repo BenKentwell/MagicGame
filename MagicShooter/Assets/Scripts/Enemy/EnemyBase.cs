@@ -65,13 +65,15 @@ public class EnemyBase : MonoBehaviour
                 shootTimer += Time.deltaTime;
             }
         }
+
+        if (CheckIfDead())
+            Die();
     }
 
    public void Damage(float _damageRecieved)
     {
         Health -= _damageRecieved;
-        if (CheckIfDead())
-            Die();
+        
     }
 
     bool CheckIfDead()
@@ -83,7 +85,7 @@ public class EnemyBase : MonoBehaviour
 
     void Die()
     {
-        GameObject.DestroyImmediate(this);
+        GameObject.DestroyImmediate(this.gameObject);
     }
 
     public void ActivateEnemy(Character _character)
