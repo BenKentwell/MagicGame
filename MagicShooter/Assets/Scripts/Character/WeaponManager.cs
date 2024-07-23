@@ -18,6 +18,8 @@ public class ManaWeaponPair
     public Weapon weapon;
     public float mana;
 
+
+    public float maxVal = 100;
     public void Start()
     {
         weapon.parentPair = this;
@@ -29,9 +31,9 @@ public class ManaWeaponPair
         {
             mana = 0;
         }
-        if (mana >= 100)
+        if (mana >= maxVal)
         {
-            mana = 100;
+            mana = maxVal;
         }
         else
         {

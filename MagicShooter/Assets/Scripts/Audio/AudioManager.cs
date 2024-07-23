@@ -65,9 +65,8 @@ public class AudioManager : MonoBehaviour
 
     public void StopBeamPlayer()
     {
-
-        
-        playerSource.Stop();
+        if(playerSource.clip == playerBeam)
+            playerSource.Stop();
     }
 
 
