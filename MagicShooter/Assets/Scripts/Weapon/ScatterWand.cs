@@ -50,7 +50,7 @@ public class ScatterWand : Weapon
                     CrystalBase crystal = hits[i].collider.gameObject.GetComponent<CrystalBase>();
                     if (crystal)
                     {
-                        crystal.TakeDamage((int)Damage);
+                        crystal.TakeDamage(Damage);
                         GameObject blood = Instantiate(hitParticle, hits[i].transform.position, Quaternion.identity);
                     }
                 }

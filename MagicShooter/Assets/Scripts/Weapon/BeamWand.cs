@@ -22,6 +22,7 @@ public class BeamWand : Weapon
             //if(timer > lastkeytime)
 
             Damage = damageCurve.Evaluate(timer);
+            Debug.Log(Damage);
 
             timer += Time.deltaTime;
             Shoot(cam.transform);
@@ -54,7 +55,7 @@ public class BeamWand : Weapon
 
         if ( CostToShoot < parentPair.mana)
         {
-            Debug.Log("Beam shooting");
+          
             DecreaseMana();
             ShootParticleSystem.Play();
             
@@ -74,7 +75,7 @@ public class BeamWand : Weapon
                 CrystalBase crystal = hit.collider.gameObject.GetComponent<CrystalBase>();
                 if (crystal)
                 {
-                    crystal.TakeDamage((int)Damage);
+                    crystal.TakeDamage(Damage);
                     GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
                 }
             }

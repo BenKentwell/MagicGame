@@ -22,7 +22,7 @@ public class CrystalBase : MonoBehaviour
        }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if(isActivated)
             health -= damage;

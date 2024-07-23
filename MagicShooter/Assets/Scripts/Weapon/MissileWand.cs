@@ -29,7 +29,7 @@ public class MissileWand : Weapon
                 CrystalBase crystal = hit.collider.gameObject.GetComponent<CrystalBase>();
                 if (crystal)
                 {
-                    crystal.TakeDamage((int)Damage);
+                    crystal.TakeDamage(Damage);
                     GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
                 }
 

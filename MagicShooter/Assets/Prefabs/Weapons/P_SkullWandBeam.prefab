@@ -57,6 +57,8 @@ MonoBehaviour:
   parentPair:
     weapon: {fileID: 0}
     mana: 0
+    maxVal: 100
+  audioMang: {fileID: 0}
   damageCurve:
     serializedVersion: 2
     m_Curve:
@@ -70,13 +72,22 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 4.176651
-      value: 3.352951
-      inSlope: 2
-      outSlope: 2
+      time: 0.5610259
+      value: 2.4137044
+      inSlope: 1.1717333
+      outSlope: 1.1717333
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4.019553
+      value: 3.514693
+      inSlope: 0.058831617
+      outSlope: 0.058831617
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4477591
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
