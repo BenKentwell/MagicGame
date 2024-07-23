@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+
     public CharacterController characterController;
 
     public Weapon currentWeapon;
@@ -13,7 +14,8 @@ public class Character : MonoBehaviour
     {
         if (!characterController)
             characterController = GetComponent<CharacterController>();
+
     }
 
-    
+   
 }

@@ -57,6 +57,7 @@ public class BeamWand : Weapon
                 if (enemy)
                 {
                     enemy.Damage(Damage);
+                    enemy.controller.SetTrigger(EnemyBase.PlayerSeenTrigger);
                     GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
                 }
             }
