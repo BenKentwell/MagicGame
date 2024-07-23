@@ -31,9 +31,17 @@ public class MissileWand : Weapon
                 {
                     crystal.TakeDamage(Damage);
                     GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
+                    return;
                 }
 
-                
+                BossDeath boss = hit.collider.gameObject.GetComponent<BossDeath>();
+                if (boss)
+                {
+                    boss.StartCinematic();
+                    GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
+                }
+
+
             }
             
         }

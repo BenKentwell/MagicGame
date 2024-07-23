@@ -8,7 +8,7 @@ public class BossDeath : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
     }
 
     public void StartCinematic()
