@@ -19,7 +19,7 @@ public class EnemyBullet : MonoBehaviour
             rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
 
-        Destroy(this.gameObject, 15);
+        Destroy(this.gameObject, 10);
 
 
     }
@@ -28,6 +28,7 @@ public class EnemyBullet : MonoBehaviour
     {
         Character player = _other.gameObject.GetComponent<Character>();
         EnemyBase enemy = _other.gameObject.GetComponent<EnemyBase>();
+        CrystalBase crystal = _other.gameObject.GetComponent<CrystalBase>();
         EnemyRoomManager enemyRM = _other.gameObject.GetComponent<EnemyRoomManager>();
         if (player)
         {
@@ -36,7 +37,7 @@ public class EnemyBullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (!enemyRM && !enemy )
+        if (!enemyRM && !enemy && !crystal )
             Destroy(this.gameObject);
     }
 

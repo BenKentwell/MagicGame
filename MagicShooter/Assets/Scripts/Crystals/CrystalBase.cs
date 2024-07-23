@@ -8,13 +8,18 @@ public class CrystalBase : MonoBehaviour
 
     [SerializeField] private List<GameObject> doorsToOpen = new();
 
+    [SerializeField] private List<GameObject> childrenCrystalComponents;
+
 
     public bool isActivated = false;
     public void SetActivation()
     {
         isActivated = true;
 
-
+       foreach (GameObject go in childrenCrystalComponents)
+       {
+            go.SetActive(true);
+       }
     }
 
     public void TakeDamage(int damage)

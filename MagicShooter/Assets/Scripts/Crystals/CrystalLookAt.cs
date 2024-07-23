@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class CrystalLookAt : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField, Tooltip("Player")]
+    private Character character;
+
+    private CrystalBase crystalBase;
+
+
+    private void Awake()
     {
-        
+        character = FindObjectOfType<Character>();
+        crystalBase = GetComponentInParent<CrystalBase>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       crystalBase.transform.LookAt(character.gameObject.transform.position);
     }
 }
