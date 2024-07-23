@@ -1446,8 +1446,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68874094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 20}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: 20, y: 0, z: 22.5}
+  m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1978,7 +1978,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 99710526}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &99710526
 Animator:
@@ -2268,7 +2268,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 139547223}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &139547223
 Animator:
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 139931846}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &139931846
 Animator:
@@ -3033,7 +3033,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 177604707}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &177604707
 Animator:
@@ -6138,7 +6138,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 435365932}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &435365932
 Animator:
@@ -9350,7 +9350,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 760502170}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &760502170
 Animator:
@@ -15758,7 +15758,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1285366051}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &1285366051
 Animator:
@@ -16306,7 +16306,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1345453967}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!95 &1345453967
 Animator:
@@ -23758,8 +23758,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911318224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 20}
-  m_LocalScale: {x: 2.1, y: 1, z: 2}
+  m_LocalPosition: {x: -0.5, y: 0, z: 22.5}
+  m_LocalScale: {x: 2.1, y: 1, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -24477,8 +24477,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936089279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21, y: 0, z: 20}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: -21, y: 0, z: 22.5}
+  m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -26461,7 +26461,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 3814495756857495341}
-  alertDistance: 1
+  alertDistance: 50
   roomActivated: 0
 --- !u!54 &8988015488651304832
 Rigidbody:
