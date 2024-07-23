@@ -8,13 +8,23 @@ public class CrystalBase : MonoBehaviour
 
     [SerializeField] private List<GameObject> doorsToOpen = new();
 
+
+    public bool isActivated = false;
+    public void SetActivation()
+    {
+        isActivated = true;
+
+
+    }
+
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        if(isActivated)
+            health -= damage;
     }
     private void Update()
     {
-        if (CheckIfBroken())
+        if (isActivated && CheckIfBroken())
         {
             //Crystal is broken
             Broke();
