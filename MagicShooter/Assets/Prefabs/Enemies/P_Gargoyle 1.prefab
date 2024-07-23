@@ -115,10 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95dc5f70d9e161745a33217de552cc83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doesThisEnemyShoot: 0
-  timeToShoot: 5
-  speed: 10
-  Health: 20
+  doesThisEnemyShoot: 1
+  timeToShoot: 3
+  speed: 12
+  Health: 30
   character: {fileID: 0}
   controller: {fileID: 0}
   alertDistance: 30
