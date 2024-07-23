@@ -56,7 +56,6 @@ public class WeaponManager : MonoBehaviour
 
     private void Start()
     {
-        if (!audioMang)
             audioMang = FindObjectOfType<AudioManager>();
 
         if (!playerCamera)

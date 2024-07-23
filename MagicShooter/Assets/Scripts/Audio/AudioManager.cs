@@ -58,23 +58,28 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBeamPlayer()
     {
-        if (playerSource.clip == playerBeam)
-            return;
+       
         playerSource.clip = playerBeam;
         playerSource.Play();
     }
 
+    public void StopBeamPlayer()
+    {
+
+        
+        playerSource.Stop();
+    }
+
+
     public void PlayScatterPlayer()
     {
-        if (playerSource.clip == playerScatter)
-            return;
+       
         playerSource.clip = playerScatter;
         playerSource.Play();
     }
     public void PlaySinglePlayer()
     {
-        if (playerSource.clip == playerSingle)
-            return;
+        
         playerSource.clip = playerSingle;
         playerSource.Play();
     }
