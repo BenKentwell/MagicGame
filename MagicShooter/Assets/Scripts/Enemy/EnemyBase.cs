@@ -25,6 +25,8 @@ public class EnemyBase : MonoBehaviour
 
     public Animator controller;
 
+    private AudioManager audioMang;
+
     private float shootTimer;
 
     public float alertDistance = 5;
@@ -74,6 +76,7 @@ public class EnemyBase : MonoBehaviour
    public void Damage(float _damageRecieved)
     {
         Health -= _damageRecieved;
+        audioMang.PlayDamageEnemy();
         
     }
 
@@ -99,6 +102,8 @@ public class EnemyBase : MonoBehaviour
         character = _character;
         roomActivated = true;
         controller.SetTrigger(EnemyBase.ActivateTrigger);
+        audioMang = character.audioMang;
+        audioMang.PlaySoundEnemy();
     }
 
     void OnDrawGizmos()
