@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
-public class PlayerSpawn : MonoBehaviour
+public class PlayerSpawn :MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        
+        GetComponent<PlayerInputManager>().onPlayerJoined += SpawnAtPosition;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SpawnAtPosition(PlayerInput _playerInput)
     {
-        
+        _playerInput.gameObject.transform.SetPositionAndRotation(transform.position, transform.rotation);
     }
+    
 }
+
