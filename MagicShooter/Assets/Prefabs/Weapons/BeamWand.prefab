@@ -113,9 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a42e210e619e764a9d63b437b74159f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CostToShoot: 0.1
+  CostToShoot: 0.5
   Damage: 1
-  rechargeRate: 1
+  rechargeRate: 0
   hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
   ShootParticleSystem: {fileID: 3670114590297932346}
   canShoot: 1
