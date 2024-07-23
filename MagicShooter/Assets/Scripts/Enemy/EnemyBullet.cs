@@ -27,6 +27,8 @@ public class EnemyBullet : MonoBehaviour
     private void OnTriggerEnter(Collider _other)
     {
         Character player = _other.gameObject.GetComponent<Character>();
+        EnemyBase enemy = _other.gameObject.GetComponent<EnemyBase>();
+        EnemyRoomManager enemyRM = _other.gameObject.GetComponent<EnemyRoomManager>();
         if (player)
         {
             player.DamagePlayer(damageToPlayer);
@@ -34,7 +36,12 @@ public class EnemyBullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-       
+        if (!enemyRM && !enemy )
+            Destroy(this.gameObject);
+            
+            
+
+
     }
 
 }
