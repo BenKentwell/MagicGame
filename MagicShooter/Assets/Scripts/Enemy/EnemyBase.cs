@@ -47,6 +47,7 @@ public class EnemyBase : MonoBehaviour
         shootTimer = Random.Range(0.016f, timeToShoot);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -93,5 +94,12 @@ public class EnemyBase : MonoBehaviour
         character = _character;
         roomActivated = true;
         controller.SetTrigger(EnemyBase.ActivateTrigger);
+    }
+
+    void OnDrawGizmos()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, alertDistance);
     }
 }

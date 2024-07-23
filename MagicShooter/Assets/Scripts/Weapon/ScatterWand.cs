@@ -45,10 +45,7 @@ public class ScatterWand : Weapon
                         GameObject blood = Instantiate(hitParticle, hits[i].transform.position, Quaternion.identity);
                     }
                 }
-                
             }
-           
-
         }
     }
 }
