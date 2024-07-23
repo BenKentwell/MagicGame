@@ -86,6 +86,11 @@ public class EnemyBase : MonoBehaviour
 
     void Die()
     {
+        var sigilDoor = GetComponentInParent<SigilDoorManager>();
+
+        if (sigilDoor != null)
+            sigilDoor.DecrementEnemyAmount();
+        
         GameObject.DestroyImmediate(this.gameObject);
     }
 

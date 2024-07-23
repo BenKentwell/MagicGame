@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6773489208373346696
 Transform:
   m_ObjectHideFlags: 0
@@ -447,9 +447,9 @@ MonoBehaviour:
     mana: 100
   weapons:
   - weapon: {fileID: 1683479225447400808}
-    mana: 100
+    mana: 50
   - weapon: {fileID: 4957558504334003223}
-    mana: 100
+    mana: 25
   - weapon: {fileID: 790609462726646642}
     mana: 100
   playerCamera: {fileID: 6773489208373346703}
@@ -471,6 +471,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460144521660753299, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
+      propertyPath: Damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460144521660753299, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
+      propertyPath: CostToShoot
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1460144521660753299, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
@@ -557,6 +565,18 @@ PrefabInstance:
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: Mana
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+      propertyPath: Damage
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+      propertyPath: CostToShoot
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+      propertyPath: rechargeRate
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: ShootParticleSystem
@@ -666,7 +686,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3609011955551385030, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: ShapeModule.m_Rotation.x
-      value: 36.57
+      value: 40.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: CostToShoot
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: rechargeRate
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7462636873211816782, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: m_RootOrder
@@ -730,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7843946868017328628, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
