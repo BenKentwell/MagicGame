@@ -41,11 +41,6 @@ public class EnemyBase : MonoBehaviour
         if (!controller)
             controller = GetComponent<Animator>();
 
-#if UNITY_EDITOR
-        if (!controller)
-            Debug.Log("Animator of enemy " + this.name + " is not set");
-#endif
-
         shootTimer = Random.Range(0.016f, timeToShoot);
     }
 
