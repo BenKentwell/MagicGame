@@ -68,6 +68,14 @@ public class BeamWand : Weapon
                     enemy.Damage(Damage);
                     enemy.controller.SetTrigger(EnemyBase.PlayerSeenTrigger);
                     GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
+                    return;
+                }
+
+                CrystalBase crystal = hit.collider.gameObject.GetComponent<CrystalBase>();
+                if (crystal)
+                {
+                    crystal.TakeDamage((int)Damage);
+                    GameObject blood = Instantiate(hitParticle, hit.transform.position, Quaternion.identity);
                 }
             }
 

@@ -44,6 +44,14 @@ public class ScatterWand : Weapon
                         enemy.Damage(Damage);
                         enemy.controller.SetTrigger(EnemyBase.PlayerSeenTrigger);
                         GameObject blood = Instantiate(hitParticle, hits[i].transform.position, Quaternion.identity);
+                        return;
+                    }
+
+                    CrystalBase crystal = hits[i].collider.gameObject.GetComponent<CrystalBase>();
+                    if (crystal)
+                    {
+                        crystal.TakeDamage((int)Damage);
+                        GameObject blood = Instantiate(hitParticle, hits[i].transform.position, Quaternion.identity);
                     }
                 }
             }
