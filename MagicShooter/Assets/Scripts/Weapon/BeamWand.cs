@@ -33,6 +33,7 @@ public class BeamWand : Weapon
         cam = _cameraTransform.gameObject;
         isShooting = true;
         timer = 0;
+        audioMang.PlayBeamPlayer();
 
     }
 
@@ -40,6 +41,7 @@ public class BeamWand : Weapon
     {
         timer = 0;
         isShooting = false;
+        audioMang.StopBeamPlayer();
     }
 
 
