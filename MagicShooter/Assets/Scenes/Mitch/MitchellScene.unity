@@ -1328,7 +1328,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 55511168}
-  alertDistance: 20
+  alertDistance: 30
   roomActivated: 0
 --- !u!95 &55511168
 Animator:
@@ -4377,7 +4377,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 328741920}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &328741920
 Animator:
@@ -9199,7 +9199,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 770342581}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &770342581
 Animator:
@@ -10021,8 +10021,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 19.320782, y: 5.125933, z: 41.80578}
-  m_Center: {x: -20.372488, y: 1.3226316, z: -23.841854}
+  m_Size: {x: 5.0890446, y: 5.125933, z: 40.54919}
+  m_Center: {x: -13.256629, y: 1.3226316, z: -23.21356}
 --- !u!114 &816822524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15310,7 +15310,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1215345853}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &1215345853
 Animator:
@@ -16586,7 +16586,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1330819052}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &1330819052
 Animator:
@@ -18708,7 +18708,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1491016715}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &1491016715
 Animator:
@@ -19816,7 +19816,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 1581068109}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &1581068109
 Animator:
@@ -26298,7 +26298,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 2086762070}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &2086762070
 Animator:
@@ -27041,7 +27041,7 @@ MonoBehaviour:
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 2130746763}
-  alertDistance: 50
+  alertDistance: 20
   roomActivated: 0
 --- !u!95 &2130746763
 Animator:

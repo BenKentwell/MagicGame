@@ -116,12 +116,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doesThisEnemyShoot: 0
-  timeToShoot: 10
-  speed: 5
+  timeToShoot: 5
+  speed: 10
   Health: 20
   character: {fileID: 0}
   controller: {fileID: 0}
-  alertDistance: 1
+  alertDistance: 30
   roomActivated: 0
 --- !u!54 &7274026385014733014
 Rigidbody:
