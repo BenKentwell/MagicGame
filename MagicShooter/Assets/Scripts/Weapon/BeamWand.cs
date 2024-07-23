@@ -8,15 +8,15 @@ public class BeamWand : Weapon
 
     private float currentDamage = 0;
     private GameObject cam;
-    private float timer;
+    private float timer = 0;
 
     private bool isShooting;
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (isShooting)
+        if (isShooting )
         {
             //Find last key on cruve and set damage
             //if(timer > lastkeytime)
@@ -45,11 +45,17 @@ public class BeamWand : Weapon
 
     public override void Shoot(Transform _cameraTransform)
     {
-        if (canShoot)
+        if (CostToShoot > parentPair.mana)
         {
+            SetNotShooting();
+        }
+
+        if ( CostToShoot < parentPair.mana)
+        {
+            Debug.Log("Beam shooting");
             DecreaseMana();
             ShootParticleSystem.Play();
-            canShoot = false;
+            
             RaycastHit hit;
             if (Physics.Raycast(_cameraTransform.position, _cameraTransform.transform.forward, out hit))
             {

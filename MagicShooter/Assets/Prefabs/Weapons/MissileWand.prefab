@@ -113,14 +113,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cee7d412dc80d449a1703a76982003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mana: 100
-  CostToShoot: 1
-  Damage: 1
+  CostToShoot: 10
+  Damage: 10
   rechargeRate: 1
   hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
   ShootParticleSystem: {fileID: 5085078512098513107}
   canShoot: 1
   weaponType: 0
+  parentPair:
+    weapon: {fileID: 0}
+    mana: 0
 --- !u!198 &5085078512098513107
 ParticleSystem:
   m_ObjectHideFlags: 0

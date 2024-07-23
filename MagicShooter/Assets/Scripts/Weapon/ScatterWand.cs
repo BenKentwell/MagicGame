@@ -10,7 +10,7 @@ public class ScatterWand : Weapon
 
     public override void Shoot(Transform _cameraTransform)
     {
-        if (canShoot)
+        if (canShoot && CostToShoot < parentPair.mana)
         {
             DecreaseMana();
             ShootParticleSystem.Play();

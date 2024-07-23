@@ -12,12 +12,40 @@ public enum eWeapon
     Error
 }
 
+[System.Serializable]
+public class ManaWeaponPair
+{
+    public Weapon weapon;
+    public float mana;
+
+    public void Start()
+    {
+        weapon.parentPair = this;
+    }
+
+    public void Update()
+    {
+        if (mana <= 0)
+        {
+            mana = 0;
+        }
+        if (mana >= 100)
+        {
+            mana = 100;
+        }
+        else
+        {
+            mana += weapon.rechargeRate * Time.deltaTime;
+        }
+    }
+}
+
 
 public class WeaponManager : MonoBehaviour
 {
-    public Weapon currentWeapon;
+    public ManaWeaponPair currentWeapon;
 
-    public Weapon[] weapons;
+    public ManaWeaponPair[] weapons;
 
     public Camera playerCamera;
 
@@ -29,42 +57,52 @@ public class WeaponManager : MonoBehaviour
         if (!playerCamera)
             playerCamera = GetComponentInChildren<Camera>();
 
-        if (!currentWeapon)
+        if (currentWeapon != null)
         {
             currentWeapon = weapons[0];
         }
 
         manaDisplay = FindObjectOfType<ManaDisplay>();
+
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i].Start();
+        }
     }
 
     private void LateUpdate()
     {
         //Set TMP mana to getmana
        manaDisplay.UpdateManaCounter(GetMana());
+
+       for (int i = 0; i < weapons.Length; i++)
+       {
+           weapons[i].Update();
+       }
     }
 
     public int GetMana()
     {
-         return (int)currentWeapon.Mana;
+        return (int)currentWeapon.mana;
     }
 
     public void SetWeapon(eWeapon _weaponToSet)
     {
-        currentWeapon.gameObject.SetActive(false);
+        currentWeapon.weapon.gameObject.SetActive(false);
         currentWeapon = weapons[(int)_weaponToSet];
-        currentWeapon.gameObject.SetActive(true);
+        currentWeapon.weapon.gameObject.SetActive(true);
         //Set new Mesh ? 
         //Go to new Anim subgraph
     }
 
     public void Shoot(InputAction.CallbackContext _context)
     {
-        switch (currentWeapon.weaponType)
+        switch (currentWeapon.weapon.weaponType)
         {
             case eWeapon.Missile:
                 if (_context.phase == InputActionPhase.Started)
                 {
-                    currentWeapon.Shoot(playerCamera.transform);
+                    currentWeapon.weapon.Shoot(playerCamera.transform);
                     SetWeaponCanShoot();
                 }
                 break;
@@ -72,7 +110,7 @@ public class WeaponManager : MonoBehaviour
             case eWeapon.Scatter:
                 if (_context.phase == InputActionPhase.Started)
                 {
-                    currentWeapon.Shoot(playerCamera.transform);
+                    currentWeapon.weapon.Shoot(playerCamera.transform);
                     SetWeaponCanShoot();
                 }
                 break;
@@ -80,7 +118,7 @@ public class WeaponManager : MonoBehaviour
             case eWeapon.Beam:
                 if (_context.phase == InputActionPhase.Started)
                 {
-                    BeamWand wand = (BeamWand)currentWeapon;
+                    BeamWand wand = (BeamWand)currentWeapon.weapon;
                     SetWeaponCanShoot();
                     wand.SetShooting(playerCamera.transform);
                 }
@@ -88,7 +126,7 @@ public class WeaponManager : MonoBehaviour
                 if (_context.phase == InputActionPhase.Canceled)
                 {
                     {
-                        BeamWand wand = (BeamWand)currentWeapon;
+                        BeamWand wand = (BeamWand)currentWeapon.weapon;
                         wand.SetNotShooting();
                     }
                 }
@@ -102,7 +140,7 @@ public class WeaponManager : MonoBehaviour
 
     public void SetWeaponCanShoot()
     {
-        currentWeapon.SetShootCooldown();
+        currentWeapon.weapon.SetShootCooldown();
     }
 
     public void SetWeaponOne()

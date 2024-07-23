@@ -8,7 +8,6 @@ using Quaternion = UnityEngine.Quaternion;
 public abstract class Weapon : MonoBehaviour
 {
     //Fast and loose
-    public float Mana = 100;
     public float CostToShoot = 1;
     public float Damage = 1;
 
@@ -19,7 +18,7 @@ public abstract class Weapon : MonoBehaviour
     public bool canShoot = true;
 
     public eWeapon weaponType = eWeapon.Error;
-
+    public ManaWeaponPair parentPair;
     
 
     //Override for damage to enemies
@@ -28,25 +27,11 @@ public abstract class Weapon : MonoBehaviour
 
     protected void DecreaseMana()
     {
-        Mana -= CostToShoot;
+        parentPair.mana -= CostToShoot;
     }
 
     public void SetShootCooldown()
     {
         canShoot = true;
     }
-    
-
-    public void Update()
-    {
-        if (Mana >= 100)
-        {
-            Mana = 100;
-        }
-        else
-        {
-            Mana += rechargeRate * Time.deltaTime;
-        }
-    }
-
 }

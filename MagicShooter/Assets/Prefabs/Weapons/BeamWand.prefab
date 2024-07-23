@@ -4892,14 +4892,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a42e210e619e764a9d63b437b74159f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mana: 100
-  CostToShoot: 1
+  CostToShoot: 0.1
   Damage: 1
   rechargeRate: 1
   hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
   ShootParticleSystem: {fileID: 5085078512098513107}
   canShoot: 1
   weaponType: 2
+  parentPair:
+    weapon: {fileID: 0}
+    mana: 0
   damageCurve:
     serializedVersion: 2
     m_Curve:
@@ -4913,8 +4915,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 1
+      time: 4.176651
+      value: 3.352951
       inSlope: 2
       outSlope: 2
       tangentMode: 0
