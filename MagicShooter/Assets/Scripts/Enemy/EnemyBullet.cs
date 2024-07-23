@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class EnemyBullet : MonoBehaviour
+{
+    [SerializeField] private float speed;
+
+    [SerializeField]
+    private Rigidbody rb;
+
+    [SerializeField]
+    private int damageToPlayer = 10;
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (!rb)
+            rb = GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * speed, ForceMode.Impulse);
+
+        Destroy(this.gameObject, 15);
+
+
+    }
+
+    private void OnTriggerEnter(Collider _other)
+    {
+        Character player = _other.gameObject.GetComponent<Character>();
+        if (player)
+        {
+            player.DamagePlayer(damageToPlayer);
+            Debug.Log("Player damaged  by" + damageToPlayer);
+            Destroy(this.gameObject);
+        }
+
+       
+    }
+
+}

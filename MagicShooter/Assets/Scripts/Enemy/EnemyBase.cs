@@ -58,19 +58,22 @@ public class EnemyBase : MonoBehaviour
             {
                 //SetTriggerShoot
                 controller.SetTrigger(ShootTrigger);
+                shootTimer = 0;
             }
             else
             {
                 shootTimer += Time.deltaTime;
             }
         }
+
+        if (CheckIfDead())
+            Die();
     }
 
    public void Damage(float _damageRecieved)
     {
         Health -= _damageRecieved;
-        if (CheckIfDead())
-            Die();
+        
     }
 
     bool CheckIfDead()
@@ -82,7 +85,7 @@ public class EnemyBase : MonoBehaviour
 
     void Die()
     {
-        GameObject.Destroy(this);
+        GameObject.DestroyImmediate(this.gameObject);
     }
 
     public void ActivateEnemy(Character _character)
