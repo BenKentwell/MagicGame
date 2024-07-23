@@ -24,7 +24,6 @@ public class CameraController : MonoBehaviour
         lookSensitivity = lookSensitivityMax;
         Cursor.lockState = CursorLockMode.Locked;
         childCamera = GetComponentInChildren<Camera>().gameObject; 
-
     }
 
     private void Update()

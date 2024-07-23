@@ -10,6 +10,7 @@ public class MissileWand : Weapon
         if (canShoot && CostToShoot < parentPair.mana)
         {
             DecreaseMana();
+            audioMang.PlaySinglePlayer();
             ShootParticleSystem.Play();
             canShoot = false;
             RaycastHit hit;

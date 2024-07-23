@@ -19,7 +19,9 @@ public abstract class Weapon : MonoBehaviour
 
     public eWeapon weaponType = eWeapon.Error;
     public ManaWeaponPair parentPair;
-    
+
+    public AudioManager audioMang;
+
 
     //Override for damage to enemies
 

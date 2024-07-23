@@ -49,11 +49,16 @@ public class WeaponManager : MonoBehaviour
 
     public Camera playerCamera;
 
+    public AudioManager audioMang;
+
     [SerializeField] private ManaDisplay manaDisplay;
 
 
     private void Start()
     {
+        if (!audioMang)
+            audioMang = FindObjectOfType<AudioManager>();
+
         if (!playerCamera)
             playerCamera = GetComponentInChildren<Camera>();
 
@@ -67,6 +72,7 @@ public class WeaponManager : MonoBehaviour
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i].Start();
+            weapons[i].weapon.audioMang = audioMang;
         }
     }
 

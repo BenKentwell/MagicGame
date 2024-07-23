@@ -6,6 +6,8 @@ public class Character : MonoBehaviour
 {
     public CharacterController characterController;
 
+    public AudioManager audioMang;
+
     public Weapon currentWeapon;
 
     public int health = 100;
@@ -14,6 +16,8 @@ public class Character : MonoBehaviour
 
     void Start()
     {
+        audioMang = FindObjectOfType<AudioManager>();
+
         if (!characterController)
             characterController = GetComponent<CharacterController>();
 
@@ -24,6 +28,7 @@ public class Character : MonoBehaviour
 
     public void DamagePlayer(int _amountToDamage)
     {
+        audioMang.PlayDamagePlayer();
         health -= _amountToDamage;
         healthDisplay.UpdateHealthCounter(health);
     }

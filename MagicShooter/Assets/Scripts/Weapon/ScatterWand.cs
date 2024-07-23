@@ -13,6 +13,7 @@ public class ScatterWand : Weapon
         if (canShoot && CostToShoot < parentPair.mana)
         {
             DecreaseMana();
+            audioMang.PlayScatterPlayer();
             ShootParticleSystem.Play();
             canShoot = false;
             RaycastHit[] hits = new RaycastHit[amountOfPellets];
