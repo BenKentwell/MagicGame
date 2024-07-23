@@ -19,6 +19,7 @@ public class CrystalLookAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       crystalBase.transform.LookAt(character.gameObject.transform.position);
+        crystalBase.transform.LookAt(character.gameObject.transform.position);
+        
     }
 }
