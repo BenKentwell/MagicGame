@@ -57,7 +57,7 @@ public class BeamWand : Weapon
             Debug.Log("Beam shooting");
             DecreaseMana();
             ShootParticleSystem.Play();
-            audioMang.PlayBeamPlayer();
+            
             RaycastHit hit;
             if (Physics.Raycast(_cameraTransform.position, _cameraTransform.transform.forward, out hit))
             {
