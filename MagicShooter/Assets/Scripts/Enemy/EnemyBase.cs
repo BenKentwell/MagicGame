@@ -58,6 +58,7 @@ public class EnemyBase : MonoBehaviour
             {
                 //SetTriggerShoot
                 controller.SetTrigger(ShootTrigger);
+                shootTimer = 0;
             }
             else
             {
@@ -82,7 +83,7 @@ public class EnemyBase : MonoBehaviour
 
     void Die()
     {
-        GameObject.Destroy(this);
+        GameObject.DestroyImmediate(this);
     }
 
     public void ActivateEnemy(Character _character)
