@@ -195,7 +195,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6773489209507112535}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -208,7 +208,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 11c197c7c2ecf044282026cf2c314314, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -445,9 +445,10 @@ MonoBehaviour:
   currentWeapon: {fileID: 1683479225447400808}
   weapons:
   - {fileID: 1683479225447400808}
-  - {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+  - {fileID: 4957558504334003223}
   - {fileID: 6432369232563648311}
   playerCamera: {fileID: 6773489208373346703}
+  manaDisplay: {fileID: 0}
 --- !u!1001 &225059977530220795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1460144521660753299, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: hitParticle
@@ -544,6 +545,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6773489208373346696}
     m_Modifications:
+    - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+      propertyPath: Mana
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: m_Name
       value: ScatterWand
@@ -554,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958420512929566087, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5085078512098513107, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -610,6 +615,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+--- !u!114 &4957558504334003223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
+  m_PrefabInstance: {fileID: 1061345443728673729}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4a893f9fde8674ca05fc118d982bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7582273772047176502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7458820648443271415, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}

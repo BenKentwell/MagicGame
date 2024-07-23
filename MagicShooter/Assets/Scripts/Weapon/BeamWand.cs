@@ -47,6 +47,7 @@ public class BeamWand : Weapon
     {
         if (canShoot)
         {
+            DecreaseMana();
             ShootParticleSystem.Play();
             canShoot = false;
             RaycastHit hit;

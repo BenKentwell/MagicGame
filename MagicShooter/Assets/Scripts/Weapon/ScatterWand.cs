@@ -12,6 +12,7 @@ public class ScatterWand : Weapon
     {
         if (canShoot)
         {
+            DecreaseMana();
             ShootParticleSystem.Play();
             canShoot = false;
             RaycastHit[] hits = new RaycastHit[amountOfPellets];

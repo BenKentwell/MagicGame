@@ -12,6 +12,7 @@ public enum eWeapon
     Error
 }
 
+
 public class WeaponManager : MonoBehaviour
 {
     public Weapon currentWeapon;
@@ -19,6 +20,8 @@ public class WeaponManager : MonoBehaviour
     public Weapon[] weapons;
 
     public Camera playerCamera;
+
+    [SerializeField] private ManaDisplay manaDisplay;
 
 
     private void Start()
@@ -30,6 +33,19 @@ public class WeaponManager : MonoBehaviour
         {
             currentWeapon = weapons[0];
         }
+
+        manaDisplay = FindObjectOfType<ManaDisplay>();
+    }
+
+    private void LateUpdate()
+    {
+        //Set TMP mana to getmana
+       manaDisplay.UpdateManaCounter(GetMana());
+    }
+
+    public int GetMana()
+    {
+         return (int)currentWeapon.Mana;
     }
 
     public void SetWeapon(eWeapon _weaponToSet)

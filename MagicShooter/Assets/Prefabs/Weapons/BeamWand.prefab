@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958420512929566087}
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: -0.165, z: 0.379}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4895,6 +4895,7 @@ MonoBehaviour:
   Mana: 100
   CostToShoot: 1
   Damage: 1
+  rechargeRate: 1
   hitParticle: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
   ShootParticleSystem: {fileID: 5085078512098513107}
   canShoot: 1
