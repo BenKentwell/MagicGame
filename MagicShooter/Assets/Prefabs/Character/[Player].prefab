@@ -838,6 +838,10 @@ PrefabInstance:
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 299014897007822929, guid: 3ecd56299c81aaa4ea4f4b3285590ecc, type: 3}
+    - target: {fileID: 1460144521660753299, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
+      propertyPath: rechargeRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3083030172361979669, guid: 2a46d84cd53b6e1438a0e955f9207190, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -925,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: Damage
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: CostToShoot
@@ -1137,12 +1141,92 @@ PrefabInstance:
       value: 40.9
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: Damage
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: CostToShoot
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: rechargeRate
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].time
+      value: 1.2477407
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].time
+      value: 2.1058369
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[3].time
+      value: 3.9612036
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].value
+      value: 0.7075546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].value
+      value: 1.4129112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[3].value
+      value: 1.9209888
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].inSlope
+      value: 0.80215055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].inSlope
+      value: 0.5466856
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[3].inSlope
+      value: 0.058831617
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].outSlope
+      value: 0.80215055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].inWeight
+      value: 0.32822573
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].outSlope
+      value: 0.83672327
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[3].inWeight
+      value: 0.4477591
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[3].outSlope
+      value: 0.058831617
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].outWeight
+      value: 0.10036443
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[1].tangentMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[2].tangentMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7462636873211816782, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: m_RootOrder
