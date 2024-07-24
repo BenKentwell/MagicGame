@@ -6,10 +6,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerSpawn :MonoBehaviour
 {
+    private PlayerInputManager mango;
 
     private void Start()
     {
-        GetComponent<PlayerInputManager>().onPlayerJoined += SpawnAtPosition;
+        PlayerInput _playerInput = GetComponent<PlayerInputManager>().JoinPlayer();
+        SpawnAtPosition(_playerInput);
+        
     }
 
     private void SpawnAtPosition(PlayerInput _playerInput)
