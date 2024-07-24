@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthDisplay : MonoBehaviour
 {
-    private TMP_Text display;
+    public TMP_Text display;
 
     private void Start()
     {

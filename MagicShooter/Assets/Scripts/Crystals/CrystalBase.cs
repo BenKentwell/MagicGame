@@ -56,6 +56,15 @@ public class CrystalBase : MonoBehaviour
             o.SetActive(false);
         }
 
+
+        FindObjectOfType<Character>().health = 100;
+        FindObjectOfType<HealthDisplay>().display.text = "Health: 100";
+
+        foreach (GameObject go in childrenCrystalComponents)
+        {
+            go.SetActive(false);
+        }
+
         //Break Crystal
         Destroy(this.gameObject);
     }
