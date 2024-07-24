@@ -6,15 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Mitch/MainMenu.unity
-    guid: 09a38228ae3dab1418a60f4ae0e57b73
-  - enabled: 0
-    path: Assets/Scenes/Mitch/MitchellScene.unity
-    guid: 60aff036ff7cf4a41b19d7d7bab98b48
-  - enabled: 1
-    path: Assets/Scenes/Mitch/Tutorial.unity
-    guid: 6e3282aa01a33fe40abf7c6d5af38ca1
-  - enabled: 1
     path: Assets/Scenes/Dev/DMainMenu.unity
     guid: 11be565c9f27d2f4a8e2317f189f1506
   - enabled: 1
@@ -23,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dev/DIntroText.unity
     guid: 55bebda95fd7277419789dda692c39f5
+  - enabled: 1
+    path: Assets/Scenes/Dev/DGame.unity
+    guid: 4069f5ccfcff52a48955df2e2ed8e87c
+  - enabled: 1
+    path: Assets/Scenes/Dev/DTutorial.unity
+    guid: 954234f6330842b41b83ea2e91bc3fb6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 21256d9fe791c384bb8124d9daed6f40, type: 2}
