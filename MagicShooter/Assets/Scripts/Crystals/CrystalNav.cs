@@ -20,11 +20,12 @@ public class CrystalNav : MonoBehaviour
     private GameObject destinationPoint;
     private Vector3 direction;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         if(!crystalBase)
             crystalBase = GetComponentInParent<CrystalBase>();
 
+        PopulatePoints();
         navPointAmount = navPoints.Count;
 
         FindNewPoint();
@@ -36,7 +37,6 @@ public class CrystalNav : MonoBehaviour
         if (destinationPoint)
         {
             crystalBase.transform.Translate(direction * speed * Time.deltaTime);
-
         }
 
         if (Vector3.Distance(crystalBase.transform.position, destinationPoint.transform.position) < 2f)

@@ -1038,6 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: NA
   audio: {fileID: 843386112}
+  isEndGame: 1
 --- !u!114 &843386114
 MonoBehaviour:
   m_ObjectHideFlags: 0
