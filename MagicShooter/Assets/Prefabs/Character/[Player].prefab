@@ -925,7 +925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: Damage
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: CostToShoot
