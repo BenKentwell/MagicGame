@@ -528,11 +528,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The high tower of the elven wizard is under attack! The Dark Lord has
-    used his crystals of power and turned all the wizard\u2019s apprentices into
-    unspeakable monsters! \n\nIt\u2019s up to you, cowardly Acolyte. Climb to the
-    top of the tower, destroy the Dark Lord\u2019s crystals, and confront the master
-    of evil once and for all! "
+  m_text: 'The Dark Lord has perished, and with him the crystals of power that for
+    millenia have given to wizards their mastery over magic.
+
+
+    But your journey
+    doesn''t end here, brave saviour. Now the quest truly begins. Travel to the land
+    of Pendragon, and there find relics of old. Rebuild the kingdom of magic! Save
+    us all! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd67e579c73502c4eb539fcad69a60ef, type: 2}
   m_sharedMaterial: {fileID: -2285053663712846551, guid: cd67e579c73502c4eb539fcad69a60ef, type: 2}
