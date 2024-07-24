@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossDeath : MonoBehaviour
 {
@@ -15,5 +16,10 @@ public class BossDeath : MonoBehaviour
         Camera.main.enabled = false;
 
         animator.Play("BossDeathTemp");
+    }
+
+    public void LoadOutro()
+    {
+        SceneManager.LoadScene("DOutrotext");
     }
 }
