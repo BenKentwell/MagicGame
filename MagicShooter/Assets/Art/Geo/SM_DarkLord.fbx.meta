@@ -3,7 +3,22 @@ guid: 9784f0aee1c71524695efc0093d413e3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bone_mat
+    second: {fileID: 2100000, guid: af82cc1dea2fb3e42968ca417c981446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkLord_mat
+    second: {fileID: 2100000, guid: 78acd2d29a5c11d49ac1d875493617bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes_mat
+    second: {fileID: 2100000, guid: 4b29383071b5bda4e9e31e80e9dfd28d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
