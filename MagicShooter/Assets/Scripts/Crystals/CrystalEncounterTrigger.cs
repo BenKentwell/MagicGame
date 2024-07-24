@@ -11,5 +11,7 @@ public class CrystalEncounterTrigger : MonoBehaviour
         {
             crystalToActivate.SetActivation();
         }
+
+        Destroy(this);
     }
 }
