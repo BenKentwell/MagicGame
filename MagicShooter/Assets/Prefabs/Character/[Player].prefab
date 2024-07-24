@@ -1789,28 +1789,36 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[0].time
+      value: -0.006250765
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[1].time
-      value: 1.2477407
+      value: 1.4226828
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[2].time
-      value: 2.1058369
+      value: 2.0683613
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[3].time
-      value: 3.9612036
+      value: 3.9541235
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
+      propertyPath: damageCurve.m_Curve.Array.data[0].value
+      value: 0.9998054
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[1].value
-      value: 0.7075546
+      value: 1.3519638
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[2].value
-      value: 1.4129112
+      value: 1.5686119
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[3].value
-      value: 1.9209888
+      value: 2.1212833
       objectReference: {fileID: 0}
     - target: {fileID: 5491728454517690285, guid: 50cb0b3b81fcbf74bad345e22af643ed, type: 3}
       propertyPath: damageCurve.m_Curve.Array.data[1].inSlope
