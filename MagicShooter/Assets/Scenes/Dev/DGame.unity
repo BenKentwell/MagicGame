@@ -3851,7 +3851,7 @@ PrefabInstance:
       objectReference: {fileID: 1773329150}
     - target: {fileID: 8800516037922768624, guid: a3a77709dc93d364e9970016131fac2e, type: 3}
       propertyPath: health
-      value: 220
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8800516037922768624, guid: a3a77709dc93d364e9970016131fac2e, type: 3}
       propertyPath: doorsToOpen.Array.size
@@ -11111,7 +11111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade43296da027074db468d5f8f52ca74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   doorsToOpen:
   - {fileID: 1081059968}
   childrenCrystalComponents:
@@ -58447,7 +58447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade43296da027074db468d5f8f52ca74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   doorsToOpen:
   - {fileID: 1738522636}
   childrenCrystalComponents:
@@ -93924,7 +93924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525948e6351754d4384a48def5dd2cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalToActivate: {fileID: 5249310269947966312}
+  crystalToActivate: {fileID: 0}
 --- !u!65 &1975099239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -101454,27 +101454,6 @@ Transform:
   m_Father: {fileID: 1231775097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5249310269947966312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5249310269947966319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ade43296da027074db468d5f8f52ca74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  doorsToOpen:
-  - {fileID: 1738522636}
-  childrenCrystalComponents:
-  - {fileID: 5249310268269983848}
-  - {fileID: 1590142895}
-  - {fileID: 966064509}
-  - {fileID: 1881755515734798381}
-  isActivated: 0
 --- !u!33 &5249310269947966314
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101566,7 +101545,6 @@ GameObject:
   - component: {fileID: 5249310269947966314}
   - component: {fileID: 5249310269947966317}
   - component: {fileID: 5249310269947966316}
-  - component: {fileID: 5249310269947966312}
   m_Layer: 0
   m_Name: CrystalMesh
   m_TagString: Untagged
