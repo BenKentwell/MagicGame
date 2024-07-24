@@ -30,6 +30,7 @@ public class EnemyBullet : MonoBehaviour
         EnemyBase enemy = _other.gameObject.GetComponent<EnemyBase>();
         CrystalBase crystal = _other.gameObject.GetComponent<CrystalBase>();
         EnemyRoomManager enemyRM = _other.gameObject.GetComponent<EnemyRoomManager>();
+        CrystalEncounterTrigger encounterTrigger = _other.gameObject.GetComponent<CrystalEncounterTrigger>();
         if (player)
         {
             player.DamagePlayer(damageToPlayer);
@@ -37,7 +38,7 @@ public class EnemyBullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (!enemyRM && !enemy && !crystal )
+        if (!enemyRM && !enemy && !crystal && !encounterTrigger)
             Destroy(this.gameObject);
     }
 
