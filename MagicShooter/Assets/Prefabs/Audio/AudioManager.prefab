@@ -59,6 +59,7 @@ MonoBehaviour:
   crystalDamage: {fileID: 8300000, guid: 1e0c75d4a32e1404f844749d93925f55, type: 3}
   music: {fileID: 4416773549452636573}
   backgrondmusic: {fileID: 8300000, guid: 160b698986e907a4982c30d02777d7fc, type: 3}
+  bossmusic: {fileID: 8300000, guid: 5bd4e96ebc6f22840a10a51d2be6db80, type: 3}
 --- !u!82 &4416773549452636571
 AudioSource:
   m_ObjectHideFlags: 0

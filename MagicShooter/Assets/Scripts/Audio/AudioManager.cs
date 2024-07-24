@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioSource music;
     [SerializeField] private AudioClip backgrondmusic;
+    [SerializeField] private AudioClip bossmusic;
 
     #region Enemy
     public void PlayDamageEnemy()
@@ -89,6 +90,17 @@ public class AudioManager : MonoBehaviour
     public void PlayBackground()
     {
         music.clip = backgrondmusic;
+        music.Play();
+    }
+
+    public void StopBackground()
+    {
+        music.Stop();
+    }
+
+    public void PlayBossMusic()
+    {
+        music.clip = bossmusic;
         music.Play();
     }
 
