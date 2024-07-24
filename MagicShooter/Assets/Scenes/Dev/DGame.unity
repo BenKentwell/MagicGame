@@ -93924,7 +93924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525948e6351754d4384a48def5dd2cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalToActivate: {fileID: 0}
+  crystalToActivate: {fileID: 1231775098}
 --- !u!65 &1975099239
 BoxCollider:
   m_ObjectHideFlags: 0
