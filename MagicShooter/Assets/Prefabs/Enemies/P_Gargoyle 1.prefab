@@ -120,7 +120,7 @@ MonoBehaviour:
   speed: 12
   Health: 30
   character: {fileID: 0}
-  controller: {fileID: 0}
+  controller: {fileID: 8324385416546503661}
   alertDistance: 30
   roomActivated: 0
 --- !u!54 &4310577851290000192

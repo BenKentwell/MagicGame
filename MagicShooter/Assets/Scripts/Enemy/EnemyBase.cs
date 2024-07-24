@@ -71,7 +71,8 @@ public class EnemyBase : MonoBehaviour
    public void Damage(float _damageRecieved)
     {
         Health -= _damageRecieved;
-        audioMang.PlayDamageEnemy();
+        if(audioMang)
+            audioMang.PlayDamageEnemy();
         
     }
 
