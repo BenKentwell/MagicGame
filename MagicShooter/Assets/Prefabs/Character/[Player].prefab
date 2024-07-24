@@ -799,8 +799,8 @@ MonoBehaviour:
     mana: 50
     maxVal: 50
   - weapon: {fileID: 4957558504334003223}
-    mana: 25
-    maxVal: 25
+    mana: 15
+    maxVal: 15
   - weapon: {fileID: 790609462726646642}
     mana: 100
     maxVal: 100
@@ -1109,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: Damage
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: CostToShoot
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 2528300645636042763, guid: 4d29fd32df5eddb4ebc20c3302e8550f, type: 3}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: rechargeRate
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3857789106353944618, guid: b1466ea4f788c6b45bcb28f3c60110dc, type: 3}
       propertyPath: ShootParticleSystem
