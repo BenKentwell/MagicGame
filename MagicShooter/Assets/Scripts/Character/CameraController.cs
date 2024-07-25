@@ -45,7 +45,7 @@ public class CameraController : MonoBehaviour
         
         transform.rotation = horizontal * transform.rotation;
 
-        float cameraLookX = childCamera.transform.eulerAngles.x;
+        float cameraLookX = childCamera.transform.localRotation.eulerAngles.x;
 
         if (cameraLookX < 360 - lookContstraintAngle.x && cameraLookX > 270)
         {
